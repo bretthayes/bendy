@@ -1,9 +1,15 @@
 {
   "name": "bendy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A grid system built for React apps inspired by React Flexbox Grid and Flexbox Grid Sass.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "author": "Brett Hayes",
+  "scripts": {
+    "clean": "rm -rf ./lib",
+    "build": "babel src --out-dir lib",
+    "prebuild": "npm run clean;",
+    "prepublish": "npm run build;"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/bretthayes/bendy.git"
@@ -22,5 +28,11 @@
     "webpack",
     "simple"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0"
+  }
 }

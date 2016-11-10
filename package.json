@@ -1,0 +1,26 @@
+{
+  "name": "bendy",
+  "version": "0.1.0",
+  "description": "A grid system built for React apps inspired by React Flexbox Grid and Flexbox Grid Sass.",
+  "main": "src/index.js",
+  "author": "Brett Hayes",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bretthayes/bendy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bretthayes/bendy/issues"
+  },
+  "keywords": [
+    "bendy",
+    "react",
+    "flexbox",
+    "sass",
+    "css modules",
+    "grid",
+    "system",
+    "webpack",
+    "simple"
+  ],
+  "license": "MIT"
+}

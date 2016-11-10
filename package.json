@@ -1,12 +1,12 @@
 {
   "name": "bendy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A grid system built for React apps inspired by React Flexbox Grid and Flexbox Grid Sass.",
   "main": "lib/index.js",
   "author": "Brett Hayes",
   "scripts": {
     "clean": "rm -rf ./lib",
-    "build": "babel src --out-dir lib",
+    "build": "babel src --out-dir lib; cp ./src/style.scss ./lib/style.scss;",
     "prebuild": "npm run clean;",
     "prepublish": "npm run build;"
   },

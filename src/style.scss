@@ -12,10 +12,9 @@ $gutter-width: 30px !default;
 $outer-margin: 20px !default;
 
 // Create or remove breakpoints for your project
-// Syntax:
-// name SIZErem,
-// sm 480px, md 768px, lg 992px, xl 1200px
-$breakpoints: sm 30rem 30rem, md 48rem 48rem, lg 62rem 62rem, xl 75rem 75rem !default;
+// Syntax: name SIZErem,
+// Breakpoints in pixels: xs 480px, sm 768px, md 992px, lg 1200px
+$breakpoints: xs 30rem 30rem, sm 48rem 48rem, md 62rem 62rem, lg 75rem 75rem !default;
 $flexboxgrid-max-width: 1200px !default;
 
 /**
@@ -58,12 +57,8 @@ $half-gutter-width: $gutter-width * .5;
 
 @mixin flexboxgrid-sass-col-common {
   box-sizing: border-box;
-  // split @include flex(0, 0, auto) into individual props
   flex-grow: 0;
   flex-shrink: 0;
-  // we leave @include flex-basis(auto) out of common because
-  // in some spots we need it and some we dont
-  // more why here: https://github.com/kristoferjoseph/flexboxgrid/issues/126
   padding-right: $half-gutter-width;
   padding-left: $half-gutter-width;
 }

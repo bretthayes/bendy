@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import classNames from 'classnames';
-import createProps from './createProps';
-import style from './style.scss';
+import createProps from '../createProps';
+import style from '../style.scss';
 
 const propTypes = {
   fluid: PropTypes.bool,

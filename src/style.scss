@@ -6,18 +6,17 @@
 $grid-columns: 12 !default;
 
 // Set the gutter between columns.
-// 1.875rem == 30px
-$gutter-width: 1.875rem !default;
+$gutter-width: 30px !default;
 
 // Set a margin for the container sides.
-// 1.25rem == 20px
-$outer-margin: 1.25rem !default;
+$outer-margin: 30px !default;
 
 // Create or remove breakpoints for your project
 // Syntax: name SIZErem,
-// Breakpoints in pixels: xs 480px, sm 768px, md 992px, lg 1200px
-$breakpoints: xs 30rem 30rem, sm 48rem 48rem, md 62rem 62rem, lg 75rem 75rem !default;
-$flexboxgrid-max-width: 1200px !default;
+// Breakpoints in pixels: sm 480px, md 768px, lg 992px, xl 1200px, xxl 1440px
+// Breakpoints in rems: sm 30rem, md 48rem, lg 62rem, xl 75rem, xxl 90rem
+$breakpoints: (sm: 30rem, md: 48rem, lg: 62rem, xl: 75rem, xxl: 90rem) !default;
+$flexboxgrid-max-width: 1440px !default;
 
 /**
  * CORE
@@ -26,7 +25,7 @@ $flexboxgrid-max-width: 1200px !default;
 $gutter-compensation: $gutter-width * .5 * -1;
 $half-gutter-width: $gutter-width * .5;
 
-.wrapper {
+.container {
   box-sizing: border-box;
   max-width: $flexboxgrid-max-width;
   margin: 0 auto;
@@ -141,13 +140,10 @@ $name: xs;
   order: 1;
 }
 
-@each $breakpoint in $breakpoints {
-  $name: nth($breakpoint, 1);
-  $size: nth($breakpoint, 2);
-  $container: nth($breakpoint, 3);
+@each $name, $size in $breakpoints {
   @media only screen and (min-width: $size) {
     .container {
-      width: $container;
+      width: $size;
     }
     .col-#{$name} {
       @include flexboxgrid-sass-col-common;

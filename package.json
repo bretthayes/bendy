@@ -1,6 +1,6 @@
 {
   "name": "bendy",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "A grid system built for React apps inspired by React Flexbox Grid and Flexbox Grid Sass.",
   "main": "lib/index.js",
   "author": "Brett Hayes",

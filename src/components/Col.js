@@ -9,10 +9,14 @@ const propTypes = {
   sm: ModificatorType,
   md: ModificatorType,
   lg: ModificatorType,
+  xl: ModificatorType,
+  xxl: ModificatorType,
   xsOffset: PropTypes.number,
   smOffset: PropTypes.number,
   mdOffset: PropTypes.number,
   lgOffset: PropTypes.number,
+  xlOffset: PropTypes.number,
+  xxlOffset: PropTypes.number,
   reverse: PropTypes.bool,
   className: PropTypes.string,
   tagName: PropTypes.string,
@@ -24,10 +28,14 @@ const classMap = {
   sm: 'col-sm',
   md: 'col-md',
   lg: 'col-lg',
+  xl: 'col-xl',
+  xxl: 'col-xxl',
   xsOffset: 'col-xs-offset',
   smOffset: 'col-sm-offset',
   mdOffset: 'col-md-offset',
-  lgOffset: 'col-lg-offset'
+  lgOffset: 'col-lg-offset',
+  xlOffset: 'col-xl-offset',
+  xxlOffset: 'col-xxl-offset'
 };
 
 function getClassNames(props) {

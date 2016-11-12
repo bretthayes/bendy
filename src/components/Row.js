@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import createProps from '../createProps';
 import style from '../style.scss';
 
-const ModificatorType = PropTypes.oneOf(['xs', 'sm', 'md', 'lg']);
+const ModificatorType = PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl', 'xxl']);
 const modificatorKeys = ['start', 'center', 'end', 'top', 'middle', 'bottom', 'around', 'between', 'first', 'last'];
 
 const propTypes = {

@@ -17,7 +17,7 @@ npm i -D bendy
 ## Example
 
 ```jsx
-import {Grid, Row, Col} from 'limber';
+import {Grid, Row, Col} from 'bendy';
 
 const App = () => (
   <Grid>

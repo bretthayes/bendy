@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "rm -rf ./lib",
     "build": "babel src --out-dir lib; cp ./src/style.scss ./lib/style.scss;",
-    "prebuild": "npm run clean;",
+    "prebuild": "npm i; npm run clean;",
     "prepublish": "npm run build;"
   },
   "repository": {

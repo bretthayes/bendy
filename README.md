@@ -1,3 +1,7 @@
+<center>
+  <img src="http://i.imgur.com/qwrpiJm.png" width="150" height="119" />
+</center>
+
 # Bendy
 
 [![npm version](https://badge.fury.io/js/bendy.svg)](https://badge.fury.io/js/bendy)

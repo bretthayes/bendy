@@ -1,6 +1,6 @@
-<center>
+<p align="center">
   <img src="http://i.imgur.com/qwrpiJm.png" width="150" height="119" />
-</center>
+</p>
 
 # Bendy
 
